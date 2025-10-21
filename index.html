@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billie Eilish - Hit Me Hard and Soft</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
       <h1>Billie Eilish</h1>
       <p>Hit Me Hard and Soft</p>
+      <nav>
+        <a href="index.html" class="active">Accueil</a>
+        <a href="concert.html">Tours & Dates</a>
+        <a href="merch.html">Merch</a>
+        <a href="songs.html">Playlist</a>
+      </nav>
     </header>
+
+    <!-- Mobile Hero Section -->
+    <section class="mobile-hero">
+      <div class="mobile-hero-content">
+        <h2>Nouvel Album 2024</h2>
+        <p>Hit Me Hard and Soft - Une expérience musicale immersive</p>
+      </div>
+    </section>
 
     <section class="bio">
       <h2>Biographie</h2>
@@ -25,6 +39,29 @@
         introspectifs. Cet équilibre entre vulnérabilité et assurance confirme
         son statut d'artiste complète et affirmée. 
       </p>
+    </section>
+
+    <!-- Mobile Stats Section -->
+    <section class="mobile-stats">
+      <h3>En Chiffres</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">50M+</span>
+          <span class="stat-label">Streams</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Grammys</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2024</span>
+          <span class="stat-label">Nouvel Album</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">World</span>
+          <span class="stat-label">Tour</span>
+        </div>
+      </div>
     </section>
 
     <section class="albums">
@@ -65,5 +102,41 @@
     <footer>
       <p>© 2025 Site sur Billie Eilish | Projet HTML/CSS</p>
     </footer>
+
+    <!-- Mobile Floating Action Button -->
+    <div class="mobile-fab" onclick="scrollToTop()"></div>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Add some mobile-specific interactions
+      document.addEventListener('DOMContentLoaded', function() {
+        // Add touch feedback to album cards
+        const albums = document.querySelectorAll('.album');
+        albums.forEach(album => {
+          album.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+          });
+          
+          album.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+          });
+        });
+        
+        // Add parallax effect to mobile hero
+        window.addEventListener('scroll', function() {
+          const scrolled = window.pageYOffset;
+          const mobileHero = document.querySelector('.mobile-hero');
+          if (mobileHero) {
+            mobileHero.style.transform = `translateY(${scrolled * 0.3}px)`;
+          }
+        });
+      });
+    </script>
   </body>
 </html>

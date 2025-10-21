@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billie Eilish - Tournée</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body class="concert-page">
@@ -13,84 +13,177 @@
       <p>Concert Tour 2025</p>
       <nav>
         <a href="index.html">Accueil</a>
-        <a href="concert.html"class="active" >Tours & Dates</a>
-        <a href="merch.html" >Merch</a>
+        <a href="concert.html" class="active">Tours & Dates</a>
+        <a href="merch.html">Merch</a>
         <a href="songs.html">Playlist</a>
       </nav>
-      
     </header>
 
-    <section class="concert">
-      <h2>🎤 Dernières Tournées</h2>
+    <!-- Mobile Hero Section for Concert Page -->
+    <section class="mobile-hero">
+      <div class="mobile-hero-content">
+        <h2>World Tour 2025</h2>
+        <p>Hit Me Hard and Soft - Live Experience</p>
+      </div>
+    </section>
 
-      <div class="concert-grid">
-        <a href="https://www.instagram.com/p/DCcYYx6PrEo/?img_index=1"> 
-        <div class="item">
-          <img
-            src="https://i.pinimg.com/1200x/dc/6e/73/dc6e737ebca94f1025427c4c81e12504.jpg"
-          />
-          <span>UNITED STATES</span>
-          </a>
+    <!-- Concert Stats Section -->
+    <section class="mobile-stats">
+      <h3>Tour Statistics</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Cities</span>
         </div>
-
-        <div class="item">
-          <a href="https://www.instagram.com/p/DLAp6-mpz5y/?img_index=1">
-          <img
-            src="https://i.pinimg.com/736x/ee/01/cf/ee01cf1a990549d4b3ca48ec550174c2.jpg"
-          />
-          <span>EUROPE</span>
-          </a>
+        <div class="stat-item">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Continents</span>
         </div>
-
-
-        <div class="item">
-          <a href="https://www.instagram.com/p/DN8dIvIEcMG/?img_index=1">
-          <img
-            src="https://i.pinimg.com/736x/70/07/76/7007769ec1523d10b7021ce5d56e738e.jpg"
-          
-          />
-          <span>ASIA</span>
-          </a>
+        <div class="stat-item">
+          <span class="stat-number">2025</span>
+          <span class="stat-label">Tour Year</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Sold Out</span>
+          <span class="stat-label">Shows</span>
         </div>
       </div>
     </section>
 
+    <section class="concert">
+      <h2>🌍 World Tour Regions</h2>
+
+      <div class="concert-grid">
+        <a href="https://www.instagram.com/p/DCcYYx6PrEo/?img_index=1" target="_blank"> 
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/1200x/dc/6e/73/dc6e737ebca94f1025427c4c81e12504.jpg"
+              alt="United States Tour"
+            />
+            <span>UNITED STATES</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DLAp6-mpz5y/?img_index=1" target="_blank">
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/736x/ee/01/cf/ee01cf1a990549d4b3ca48ec550174c2.jpg"
+              alt="Europe Tour"
+            />
+            <span>EUROPE</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DN8dIvIEcMG/?img_index=1" target="_blank">
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/736x/70/07/76/7007769ec1523d10b7021ce5d56e738e.jpg"
+              alt="Asia Tour"
+            />
+            <span>ASIA</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <section class="tour">
-      <h2>🎤 Dates des Prochaines Tournées 2025</h2>
-      <table>
+      <h2>📅 Upcoming Tour Dates 2025</h2>
+      
+      <!-- Mobile-friendly tour cards instead of table -->
+      <div class="tour-dates">
+        <div class="tour-date-card">
+          <div class="tour-date">23 octobre 2025</div>
+          <div class="tour-city">Philadelphia</div>
+          <div class="tour-state">Pennsylvania</div>
+        </div>
+        
+        <div class="tour-date-card">
+          <div class="tour-date">7 novembre 2025</div>
+          <div class="tour-city">New Orleans</div>
+          <div class="tour-state">Louisiana</div>
+        </div>
+        
+        <div class="tour-date-card">
+          <div class="tour-date">13 novembre 2025</div>
+          <div class="tour-city">Austin</div>
+          <div class="tour-state">Texas</div>
+        </div>
+        
+        <div class="tour-date-card">
+          <div class="tour-date">22 novembre 2025</div>
+          <div class="tour-city">San Francisco</div>
+          <div class="tour-state">California</div>
+        </div>
+      </div>
+      
+      <!-- Keep table for desktop but hide on mobile -->
+      <table class="desktop-table">
         <tr>
           <th>Date</th>
           <th>Ville</th>
           <th>Etat</th>
         </tr>
-      
         <tr>
-          <td>23 octobre 2025</td>
-          <td>Philadelphia</td>
-          <td>Pennsylvania</td>
-            
+          <td data-label="Date">23 octobre 2025</td>
+          <td data-label="Ville">Philadelphia</td>
+          <td data-label="Etat">Pennsylvania</td>
         </tr>
         <tr>
-          <td>7 novembre 2025</td>
-          <td>New Orleans</td>
-          <td>Los Angeles</td>
+          <td data-label="Date">7 novembre 2025</td>
+          <td data-label="Ville">New Orleans</td>
+          <td data-label="Etat">Louisiana</td>
         </tr>
         <tr>
-          <td>13 novembre 2025</td>
-          <td>Austin</td>
-          <td>Texas</td>
+          <td data-label="Date">13 novembre 2025</td>
+          <td data-label="Ville">Austin</td>
+          <td data-label="Etat">Texas</td>
         </tr>
         <tr>
-          <td>22 novembre 2025</td>
-          <td>San Francisco</td>
-          <td>California</td>
+          <td data-label="Date">22 novembre 2025</td>
+          <td data-label="Ville">San Francisco</td>
+          <td data-label="Etat">California</td>
         </tr>
-      
       </table>
     </section>
 
     <footer>
       <p>© 2025 Site sur Billie Eilish | Projet HTML/CSS</p>
     </footer>
+
+    <!-- Mobile Floating Action Button -->
+    <div class="mobile-fab" onclick="scrollToTop()"></div>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Add mobile-specific interactions
+      document.addEventListener('DOMContentLoaded', function() {
+        // Add touch feedback to concert items
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => {
+          item.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+          });
+          
+          item.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+          });
+        });
+        
+        // Add parallax effect to mobile hero
+        window.addEventListener('scroll', function() {
+          const scrolled = window.pageYOffset;
+          const mobileHero = document.querySelector('.mobile-hero');
+          if (mobileHero) {
+            mobileHero.style.transform = `translateY(${scrolled * 0.3}px)`;
+          }
+        });
+      });
+    </script>
   </body>
 </html>

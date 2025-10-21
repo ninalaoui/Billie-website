@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Billie Eilish – Songs</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Billie Eilish – Playlist</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="songs-page">
     <header>
       <h1>Billie Eilish</h1>
-      <p>Top Songs</p>
+      <p>Hit Me Hard and Soft</p>
       <nav>
         <a href="index.html">Accueil</a>
         <a href="concert.html">Tours & Dates</a>
@@ -18,161 +18,310 @@
       </nav>
     </header>
 
-    <section class="songs-gallery">
-      <h2>Les plus écoutés 🎧</h2>
-      <div class="songs-grid">
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/629DixmZGHc7ILtEntuiWE"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="LUNCH"
-            />
-            <h3>LUNCH</h3>
-          </a>
+    <!-- Mobile Hero Section for Playlist -->
+    <section class="mobile-hero">
+      <div class="mobile-hero-content">
+        <h2>🎵 Playlist Officielle</h2>
+        <p>Hit Me Hard and Soft - Les meilleurs titres</p>
+      </div>
+    </section>
+
+    <!-- Playlist Stats -->
+    <section class="mobile-stats">
+      <h3>Playlist Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Tracks</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">45min</span>
+          <span class="stat-label">Duration</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2024</span>
+          <span class="stat-label">Album</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">★ 4.9</span>
+          <span class="stat-label">Rating</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Track -->
+    <section class="featured-track">
+      <div class="featured-content">
+        <div class="album-artwork">
+          <div class="vinyl-disc">
+            <div class="vinyl-center"></div>
+            <div class="vinyl-grooves"></div>
+          </div>
+          <div class="play-button">
+            <div class="play-icon">▶</div>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>LUNCH</h3>
+          <p>Hit Me Hard and Soft</p>
+          <div class="track-stats">
+            <span>3:30</span>
+            <span>•</span>
+            <span>Most Played</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playlist Section -->
+    <section class="playlist-section">
+      <div class="playlist-header">
+        <h2>🎧 Top Tracks</h2>
+        <div class="playlist-controls">
+          <button class="shuffle-btn">🔀</button>
+          <button class="play-all-btn">▶ Play All</button>
+        </div>
+      </div>
+      
+      <div class="playlist-container">
+        <!-- Track 1 -->
+        <div class="track-item" data-track="1">
+          <div class="track-number">01</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="LUNCH" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>LUNCH</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:30</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/3QaPy1KgI7nu9FJEQUgn6h"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="WILDFLOWER"
-            />
-            <h3>WILDFLOWER</h3>
-          </a>
+        <!-- Track 2 -->
+        <div class="track-item" data-track="2">
+          <div class="track-number">02</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="WILDFLOWER" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>WILDFLOWER</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:40</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/6dOtVTDdiauQNBQEDOtlAB"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="BIRDS OF A FEATHER"
-            />
-            <h3>BIRDS OF A FEATHER</h3>
-          </a>
+        <!-- Track 3 -->
+        <div class="track-item" data-track="3">
+          <div class="track-number">03</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="BIRDS OF A FEATHER" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>BIRDS OF A FEATHER</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:27</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/7BRD7x5pt8Lqa1eGYC4dzj"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="CHIHIRO"
-            />
-            <h3>CHIHIRO</h3>
-          </a>
+        <!-- Track 4 -->
+        <div class="track-item" data-track="4">
+          <div class="track-number">04</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="CHIHIRO" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>CHIHIRO</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:44</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/6fPan2saHdFaIHuTSatORv"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="L'AMOUR DE MA VIE"
-            />
-            <h3>L'AMOUR DE MA VIE</h3>
-          </a>
-        </div>
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/6TGd66r0nlPaYm3KIoI7ET"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg"
-              alt="THE GREATEST"
-            />
-            <h3>THE GREATEST</h3>
-          </a>
-        </div>
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/3Tc57t9l2O8FwQZtQOvPXK"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/1200x/44/a2/0d/44a20d676e22c932d1d18b28924093b7.jpg"
-              alt="MY STRANGE ADDICTION"
-            />
-            <h3>MY STRANGE ADDICTION</h3>
-          </a>
+        <!-- Track 5 -->
+        <div class="track-item" data-track="5">
+          <div class="track-number">05</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="L'AMOUR DE MA VIE" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>L'AMOUR DE MA VIE</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:42</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/album/4i3rAwPw7Ln2YrKDusaWyT"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/40/d9/39/40d9394551378af2f6f75ab6e656434a.jpg"
-              alt="EVERYTHING I WANTED"
-            />
-            <h3>EVERYTHING I WANTED</h3>
-          </a>
+        <!-- Track 6 -->
+        <div class="track-item" data-track="6">
+          <div class="track-number">06</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg" alt="THE GREATEST" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>THE GREATEST</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:46</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/track/7hDVYcQq6MxkdJGweuCtl9"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/96/bf/96/96bf964dc2cd6ce3e45dba35b6db6688.jpg"
-              alt="OCEAN EYES"
-            />
-            <h3>OCEAN EYES</h3>
-          </a>
+        <!-- Track 7 -->
+        <div class="track-item" data-track="7">
+          <div class="track-number">07</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/1200x/44/a2/0d/44a20d676e22c932d1d18b28924093b7.jpg" alt="MY STRANGE ADDICTION" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>MY STRANGE ADDICTION</h4>
+            <p>When We All Fall Asleep</p>
+          </div>
+          <div class="track-duration">3:00</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/0u2P5u6lvoDfwTYjAADbn4"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/63/e4/6f/63e46fe38c7b115bc9be2f2dc3194587.jpg"
-              alt="LOVELY"
-            />
-            <h3>LOVELY</h3>
-          </a>
+        <!-- Track 8 -->
+        <div class="track-item" data-track="8">
+          <div class="track-number">08</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/40/d9/39/40d9394551378af2f6f75ab6e656434a.jpg" alt="EVERYTHING I WANTED" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>EVERYTHING I WANTED</h4>
+            <p>Single</p>
+          </div>
+          <div class="track-duration">4:05</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/4RVwu0g32PAqgUiJoXsdF8"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/0b/a8/a4/0ba8a46bb68cfb2a47ac042cfdcac447.jpg"
-              alt="HAPPIER THAN EVER"
-            />
-            <h3>HAPPIER THAN EVER</h3>
-          </a>
+        <!-- Track 9 -->
+        <div class="track-item" data-track="9">
+          <div class="track-number">09</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/96/bf/96/96bf964dc2cd6ce3e45dba35b6db6688.jpg" alt="OCEAN EYES" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>OCEAN EYES</h4>
+            <p>Don't Smile at Me</p>
+          </div>
+          <div class="track-duration">3:20</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
 
-        <div class="song-card">
-          <a
-            href="https://open.spotify.com/intl-fr/track/0IsIY8pfu1yaGkPUD7pkDx"
-            target="_blank"
-          >
-            <img
-              src="https://i.pinimg.com/736x/c7/01/44/c70144a86faf698a87a442f68dff8699.jpg"
-              alt="GUESS"
-            />
-            <h3>GUESS</h3>
-          </a>
+        <!-- Track 10 -->
+        <div class="track-item" data-track="10">
+          <div class="track-number">10</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/63/e4/6f/63e46fe38c7b115bc9be2f2dc3194587.jpg" alt="LOVELY" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>LOVELY</h4>
+            <p>Don't Smile at Me</p>
+          </div>
+          <div class="track-duration">3:20</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
+        </div>
+
+        <!-- Track 11 -->
+        <div class="track-item" data-track="11">
+          <div class="track-number">11</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/0b/a8/a4/0ba8a46bb68cfb2a47ac042cfdcac447.jpg" alt="HAPPIER THAN EVER" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>HAPPIER THAN EVER</h4>
+            <p>Happier Than Ever</p>
+          </div>
+          <div class="track-duration">4:58</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
+        </div>
+
+        <!-- Track 12 -->
+        <div class="track-item" data-track="12">
+          <div class="track-number">12</div>
+          <div class="track-artwork">
+            <img src="https://i.pinimg.com/736x/c7/01/44/c70144a86faf698a87a442f68dff8699.jpg" alt="GUESS" />
+            <div class="play-overlay">
+              <div class="play-icon-small">▶</div>
+            </div>
+          </div>
+          <div class="track-details">
+            <h4>GUESS</h4>
+            <p>Hit Me Hard and Soft</p>
+          </div>
+          <div class="track-duration">3:33</div>
+          <div class="track-actions">
+            <button class="like-btn">♡</button>
+            <button class="more-btn">⋯</button>
+          </div>
         </div>
       </div>
     </section>
@@ -180,5 +329,408 @@
     <footer>
       <p>© 2025 Site sur Billie Eilish | Projet HTML/CSS</p>
     </footer>
+
+    <!-- Mobile Floating Action Button -->
+    <div class="mobile-fab" onclick="scrollToTop()"></div>
+
+    <!-- Audio Player -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+    
+    <!-- Audio Controls -->
+    <div class="audio-controls" id="audioControls">
+      <div class="now-playing">
+        <div class="now-playing-artwork">
+          <img id="nowPlayingImg" src="" alt="Now Playing" />
+        </div>
+        <div class="now-playing-info">
+          <div class="now-playing-title" id="nowPlayingTitle">Select a song</div>
+          <div class="now-playing-artist" id="nowPlayingArtist">Billie Eilish</div>
+        </div>
+      </div>
+      <div class="audio-progress">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <div class="audio-buttons">
+        <button class="audio-btn" id="prevBtn">⏮</button>
+        <button class="audio-btn play-pause-btn" id="playPauseBtn">▶</button>
+        <button class="audio-btn" id="nextBtn">⏭</button>
+        <button class="audio-btn" id="volumeBtn">🔊</button>
+      </div>
+    </div>
+
+    <script>
+      // Song data with preview URLs (using YouTube audio or similar)
+      const songs = [
+        {
+          id: 1,
+          title: "LUNCH",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:30",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 2,
+          title: "WILDFLOWER",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:40",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 3,
+          title: "BIRDS OF A FEATHER",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:27",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 4,
+          title: "CHIHIRO",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:44",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 5,
+          title: "L'AMOUR DE MA VIE",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:42",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 6,
+          title: "THE GREATEST",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:46",
+          image: "https://i.pinimg.com/736x/f1/55/1d/f1551d10cd1d18817760f04efc8d8f70.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 7,
+          title: "MY STRANGE ADDICTION",
+          artist: "Billie Eilish",
+          album: "When We All Fall Asleep",
+          duration: "3:00",
+          image: "https://i.pinimg.com/1200x/44/a2/0d/44a20d676e22c932d1d18b28924093b7.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 8,
+          title: "EVERYTHING I WANTED",
+          artist: "Billie Eilish",
+          album: "Single",
+          duration: "4:05",
+          image: "https://i.pinimg.com/736x/40/d9/39/40d9394551378af2f6f75ab6e656434a.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 9,
+          title: "OCEAN EYES",
+          artist: "Billie Eilish",
+          album: "Don't Smile at Me",
+          duration: "3:20",
+          image: "https://i.pinimg.com/736x/96/bf/96/96bf964dc2cd6ce3e45dba35b6db6688.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 10,
+          title: "LOVELY",
+          artist: "Billie Eilish",
+          album: "Don't Smile at Me",
+          duration: "3:20",
+          image: "https://i.pinimg.com/736x/63/e4/6f/63e46fe38c7b115bc9be2f2dc3194587.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 11,
+          title: "HAPPIER THAN EVER",
+          artist: "Billie Eilish",
+          album: "Happier Than Ever",
+          duration: "4:58",
+          image: "https://i.pinimg.com/736x/0b/a8/a4/0ba8a46bb68cfb2a47ac042cfdcac447.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        },
+        {
+          id: 12,
+          title: "GUESS",
+          artist: "Billie Eilish",
+          album: "Hit Me Hard and Soft",
+          duration: "3:33",
+          image: "https://i.pinimg.com/736x/c7/01/44/c70144a86faf698a87a442f68dff8699.jpg",
+          audioUrl: "audio/rick_roll.mp3"
+        }
+      ];
+
+      let currentSongIndex = 0;
+      let isPlaying = false;
+      let audio = document.getElementById('audioPlayer');
+      
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Initialize audio player
+      function initAudioPlayer() {
+        // Load first song
+        loadSong(0);
+        
+        // Audio event listeners
+        audio.addEventListener('loadedmetadata', updateDuration);
+        audio.addEventListener('timeupdate', updateProgress);
+        audio.addEventListener('ended', nextSong);
+        
+        // Control button listeners
+        document.getElementById('playPauseBtn').addEventListener('click', togglePlayPause);
+        document.getElementById('prevBtn').addEventListener('click', previousSong);
+        document.getElementById('nextBtn').addEventListener('click', nextSong);
+        document.getElementById('volumeBtn').addEventListener('click', toggleMute);
+        
+        // Progress bar click
+        document.querySelector('.progress-bar').addEventListener('click', seekTo);
+      }
+      
+      function loadSong(index) {
+        if (index >= 0 && index < songs.length) {
+          currentSongIndex = index;
+          const song = songs[index];
+          
+          // Stop current audio if playing
+          audio.pause();
+          audio.currentTime = 0;
+          
+          // Load new song
+          audio.src = song.audioUrl;
+          document.getElementById('nowPlayingImg').src = song.image;
+          document.getElementById('nowPlayingTitle').textContent = song.title;
+          document.getElementById('nowPlayingArtist').textContent = song.artist;
+          document.getElementById('duration').textContent = song.duration;
+          
+          // Update vinyl disc with song artwork
+          updateVinylDisc(song.image);
+          
+          // Update track highlighting
+          updateTrackHighlight();
+          
+          // Reset progress
+          document.getElementById('progressFill').style.width = '0%';
+          document.getElementById('currentTime').textContent = '0:00';
+        }
+      }
+      
+      function updateVinylDisc(imageUrl) {
+        const vinylDisc = document.querySelector('.vinyl-disc');
+        if (vinylDisc) {
+          // Create a realistic vinyl effect with small artwork in center
+          vinylDisc.style.background = `
+            radial-gradient(circle at center, transparent 15%, rgba(0,0,0,0.1) 15%, rgba(0,0,0,0.1) 100%),
+            linear-gradient(45deg, #1a1a1a, #2a2a2a, #1a1a1a)
+          `;
+          
+          // Add vinyl grooves overlay
+          vinylDisc.style.position = 'relative';
+          vinylDisc.style.overflow = 'hidden';
+          
+          // Create vinyl grooves effect with artwork in center
+          vinylDisc.innerHTML = `
+            <div class="vinyl-grooves"></div>
+            <div class="vinyl-center">
+              <div class="vinyl-label" style="background-image: url('${imageUrl}');"></div>
+            </div>
+          `;
+        }
+      }
+      
+      function togglePlayPause() {
+        if (isPlaying) {
+          audio.pause();
+          document.getElementById('playPauseBtn').textContent = '▶';
+          isPlaying = false;
+        } else {
+          audio.play().then(() => {
+            document.getElementById('playPauseBtn').textContent = '⏸';
+            isPlaying = true;
+          }).catch(error => {
+            console.log('Playback failed:', error);
+            // Try to play anyway
+            audio.play();
+          });
+        }
+      }
+      
+      function previousSong() {
+        const prevIndex = currentSongIndex > 0 ? currentSongIndex - 1 : songs.length - 1;
+        loadSong(prevIndex);
+        if (isPlaying) {
+          audio.addEventListener('canplaythrough', function playWhenReady() {
+            audio.removeEventListener('canplaythrough', playWhenReady);
+            audio.play().catch(error => console.log('Playback failed:', error));
+          }, { once: true });
+        }
+      }
+      
+      function nextSong() {
+        const nextIndex = currentSongIndex < songs.length - 1 ? currentSongIndex + 1 : 0;
+        loadSong(nextIndex);
+        if (isPlaying) {
+          audio.addEventListener('canplaythrough', function playWhenReady() {
+            audio.removeEventListener('canplaythrough', playWhenReady);
+            audio.play().catch(error => console.log('Playback failed:', error));
+          }, { once: true });
+        }
+      }
+      
+      function toggleMute() {
+        audio.muted = !audio.muted;
+        document.getElementById('volumeBtn').textContent = audio.muted ? '🔇' : '🔊';
+      }
+      
+      function updateDuration() {
+        const duration = audio.duration;
+        document.getElementById('duration').textContent = formatTime(duration);
+      }
+      
+      function updateProgress() {
+        const progress = (audio.currentTime / audio.duration) * 100;
+        document.getElementById('progressFill').style.width = progress + '%';
+        document.getElementById('currentTime').textContent = formatTime(audio.currentTime);
+      }
+      
+      function seekTo(e) {
+        const progressBar = document.querySelector('.progress-bar');
+        const clickX = e.offsetX;
+        const width = progressBar.offsetWidth;
+        const duration = audio.duration;
+        audio.currentTime = (clickX / width) * duration;
+      }
+      
+      function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+      }
+      
+      function updateTrackHighlight() {
+        // Remove highlight from all tracks
+        document.querySelectorAll('.track-item').forEach(item => {
+          item.classList.remove('playing');
+        });
+        
+        // Add highlight to current track
+        const currentTrack = document.querySelector(`[data-track="${currentSongIndex + 1}"]`);
+        if (currentTrack) {
+          currentTrack.classList.add('playing');
+        }
+      }
+      
+      // Playlist interactions
+      document.addEventListener('DOMContentLoaded', function() {
+        initAudioPlayer();
+        
+        // Vinyl disc rotation
+        const vinylDisc = document.querySelector('.vinyl-disc');
+        if (vinylDisc) {
+          vinylDisc.style.animation = 'spin 3s linear infinite';
+        }
+        
+        // Track click to play
+        const trackItems = document.querySelectorAll('.track-item');
+        trackItems.forEach((item, index) => {
+          item.addEventListener('click', function() {
+            loadSong(index);
+            
+            // Wait for audio to be ready before playing
+            audio.addEventListener('canplaythrough', function playWhenReady() {
+              audio.removeEventListener('canplaythrough', playWhenReady);
+              audio.play().then(() => {
+                document.getElementById('playPauseBtn').textContent = '⏸';
+                isPlaying = true;
+              }).catch(error => {
+                console.log('Playback failed:', error);
+                // Fallback: try to play anyway
+                audio.play();
+              });
+            }, { once: true });
+            
+            // If audio is already loaded, play immediately
+            if (audio.readyState >= 3) {
+              audio.play().then(() => {
+                document.getElementById('playPauseBtn').textContent = '⏸';
+                isPlaying = true;
+              }).catch(error => {
+                console.log('Playback failed:', error);
+              });
+            }
+          });
+          
+          item.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'rgba(106, 163, 255, 0.1)';
+            const playOverlay = this.querySelector('.play-overlay');
+            if (playOverlay) {
+              playOverlay.style.opacity = '1';
+            }
+          });
+          
+          item.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('playing')) {
+              this.style.backgroundColor = 'transparent';
+            }
+            const playOverlay = this.querySelector('.play-overlay');
+            if (playOverlay) {
+              playOverlay.style.opacity = '0';
+            }
+          });
+        });
+        
+        // Play button interactions
+        const playButtons = document.querySelectorAll('.play-icon, .play-icon-small');
+        playButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              this.style.transform = 'scale(1)';
+            }, 100);
+          });
+        });
+        
+        // Like button interactions
+        const likeButtons = document.querySelectorAll('.like-btn');
+        likeButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.textContent = this.textContent === '♡' ? '♥' : '♡';
+            this.style.color = this.textContent === '♥' ? '#ff6b6b' : '#8cd3f6';
+          });
+        });
+        
+        // Parallax effect for mobile hero
+        window.addEventListener('scroll', function() {
+          const scrolled = window.pageYOffset;
+          const mobileHero = document.querySelector('.mobile-hero');
+          if (mobileHero) {
+            mobileHero.style.transform = `translateY(${scrolled * 0.3}px)`;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
